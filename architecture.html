@@ -104,6 +104,34 @@ img{
     transform:scale(1.02);
 }
 
+/* Comparison two-column layout: left = drawings, right = real images */
+.comparison-section{
+    display:flex;
+    gap:30px;
+    align-items:flex-start;
+    margin:40px 0;
+    justify-content:center;
+}
+
+.comparison-column{
+    flex:1;
+    min-width:280px;
+    max-width:520px;
+}
+
+.comparison-column img{
+    width:100%;
+    border-radius:12px;
+    border:3px solid #ffd700;
+    box-shadow:0 0 18px rgba(0,0,0,0.45);
+    margin-bottom:18px;
+}
+
+@media (max-width:700px){
+    .comparison-section{flex-direction:column;gap:16px}
+    .artwork-image{width:100%;max-width:800px}
+}
+
 </style>
 </head>
 
@@ -147,6 +175,33 @@ img{
     <img src="srambickal palace.png" alt="My Palace Drawing" class="artwork-image">
     <img src="palace-thkkemuri -inside.png" alt="My Palace Drawing" class="artwork-image">
     <img src="neelazhikettu palace.png" alt="My Palace Drawing" class="artwork-image">
+</div>
+
+<h2>Comparison: My Drawings vs Real Palaces</h2>
+<p>Left column shows my drawings; right column is for the corresponding real photos.</p>
+
+<div class="comparison-section">
+    <div class="comparison-column">
+        <img src="padalam-nalukettu-palace.png" alt="Drawing: Padalam Nalukettu" class="comparison-image">
+        <img src="malika palace.png" alt="Drawing: Malika Palace" class="comparison-image">
+        <img src="kottithara-palace.png" alt="Drawing: Kottithara Palace" class="comparison-image">
+        <img src="thekkemuri palace.png" alt="Drawing: Thekkemuri Palace" class="comparison-image">
+        <img src="main malika.png" alt="Drawing: Main Malika" class="comparison-image">
+        <img src="srambickal palace.png" alt="Drawing: Srambickal Palace" class="comparison-image">
+        <img src="palace-thkkemuri -inside.png" alt="Drawing: Palace Thekkemuri Inside" class="comparison-image">
+        <img src="neelazhikettu palace.png" alt="Drawing: Neelazhikettu Palace" class="comparison-image">
+    </div>
+
+    <div class="comparison-column">
+        <img src="real-padalam-nalukettu.jpg" alt="Real: Padalam Nalukettu" class="comparison-image">
+        <img src="real-malika-palace.jpg" alt="Real: Malika Palace" class="comparison-image">
+        <img src="real-kottithara-palace.jpg" alt="Real: Kottithara Palace" class="comparison-image">
+        <img src="real-thekkemuri-palace.jpg" alt="Real: Thekkemuri Palace" class="comparison-image">
+        <img src="real-main-malika.jpg" alt="Real: Main Malika" class="comparison-image">
+        <img src="real-srambickal-palace.jpg" alt="Real: Srambickal Palace" class="comparison-image">
+        <img src="real-palace-thekkemuri-inside.jpg" alt="Real: Palace Thekkemuri Inside" class="comparison-image">
+        <img src="real-neelazhikettu-palace.jpg" alt="Real: Neelazhikettu Palace" class="comparison-image">
+    </div>
 </div>
 
     <a href="index.html" class="back-btn">← Back to Home</a>
