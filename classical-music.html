@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Classical Music</title>
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: "Trebuchet MS", sans-serif;
+    min-height:100vh;
+    background:
+        linear-gradient(
+            rgba(0,0,0,0.7),
+            rgba(0,0,0,0.7)
+        ),
+        url('kerala-mural.jpg');
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+    color:white;
+}
+
+header{
+    padding:30px 0;
+    text-align:center;
+    background:rgba(0,0,0,0.5);
+}
+
+header h1{
+    color:#ffd700;
+    font-size:2.4rem;
+}
+
+.content{
+    max-width:1000px;
+    margin:40px auto;
+    padding:30px;
+    background:rgba(0,0,0,0.45);
+    border-radius:16px;
+    backdrop-filter:blur(6px);
+}
+
+.content h2{
+    color:#ffd700;
+    margin:24px 0 12px;
+}
+
+.content p,
+.content li{
+    line-height:1.8;
+    margin-bottom:12px;
+}
+
+ul{
+    padding-left:20px;
+}
+
+.highlight{
+    color:#ffd700;
+    font-weight:bold;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+    margin-top:20px;
+}
+
+.card{
+    background:rgba(255,255,255,0.12);
+    padding:18px;
+    border-radius:12px;
+    border:1px solid rgba(255,255,255,0.15);
+}
+
+.back-btn{
+    display:inline-block;
+    margin-top:20px;
+    padding:12px 24px;
+    background:#b22222;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:bold;
+}
+
+.back-btn:hover{
+    background:#ffd700;
+    color:black;
+}
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Classical Music</h1>
+</header>
+
+<div class="content">
+    <p>
+        Classical music has always been a peaceful part of my life. I enjoy the calm rhythm,
+        rich emotions and the deep feeling that comes with traditional compositions.
+    </p>
+
+    <h2>What I Enjoy</h2>
+    <p>
+        I especially enjoy <span class="highlight">Carnatic classical music</span>, with its expressive
+        melodies, devotional themes and graceful structure. The combination of voice, rhythm and
+        improvisation makes every performance feel unique and inspiring.
+    </p>
+
+    <div class="cards">
+        <div class="card">
+            <h3>🎼 Melodies</h3>
+            <p>Listening to ragas and devotional songs that bring calm and focus.</p>
+        </div>
+        <div class="card">
+            <h3>🥁 Rhythm</h3>
+            <p>Enjoying the energy and precision of percussion in classical performances.</p>
+        </div>
+        <div class="card">
+            <h3>🎻 Instruments</h3>
+            <p>Appreciating the beauty of violin, veena, flute and mridangam.</p>
+        </div>
+    </div>
+
+    <h2>My Inspiration</h2>
+    <ul>
+        <li>Traditional Carnatic compositions and devotional songs</li>
+        <li>Live concerts and performances with strong emotional expression</li>
+        <li>Learning how music connects culture, heritage and memory</li>
+    </ul>
+
+    <a href="index.html" class="back-btn">← Back to Home</a>
+</div>
+
+</body>
+</html>
